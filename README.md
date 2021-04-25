@@ -1,3 +1,31 @@
+# Anny Bae Portfolio
+
+Portfolio website for Anny Bae
+Created by Joseph Bae by Bae Consulting
+
+## Description
+
+This website is created using React, React-Router, and Redux to create
+a simple portfolio website and deployed by Heroku.
+
+## Changelog
+
+As this portfolio website continues to develop, certain aspects of the website,
+such as functionality and features, may continue to be developed or improved.
+This changelog will be the developer's best attempt to record all changes.
+
+2021/04/25: Initial commit, some organization structures and installing dependencies.
+
+## Features
+
+Planned features
+
+- About Me Section
+- About Me linked to Social Medias
+- Navigation Section
+- Contact Me Section
+- Works Section
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
