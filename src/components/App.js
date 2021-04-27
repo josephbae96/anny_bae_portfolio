@@ -1,35 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
-import Router from 'react-router';
+import React from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { Container, NavBar } from 'react-boostrap';
 
-const App = () => {
-  return (
-    <div>
-      <title>Anny Bae Portfolio</title>
-      <p></p>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      title: "Anny Bae",
+      headerLinks: [
+        { title: 'Home', path: '/' },
+        { title: 'About', path: '/about' },
+        { title: 'Articles', path: '/articles' },
+        { title: 'AContact', path: '/contact' }
+      ],
+      home: {
+        title: 'Anny Bae',
+        subTitle: 'Doctoral Candidate for the Texas A&M University - Corpus Christi Psychology Program',
+        text: 'Lover of Priviledge'
+      },
+      about: {
+        title: 'About'
+      },
+      Articles: {
+        title: 'Articles'
+      },
+      AContact: {
+        title: 'Contact'
+      }
+    }
+  }
+
+  render() {
+    return (
+      <Router>
+        <Container fluid={true}>
+          <NavBar className="border-bottom" bg="transparent" expand="lg">
+            <NavBar.Brand>Anny Bae</NavBar.Brand>
+            <NavBar.Toggle className="border-0" aria-controls="navbar-toggle" />
+            <NavBar.Collapse id="navbar-toggle">
+              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/articles">Articles</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
+            </NavBar.Collapse>
+          </NavBar>
+        </Container>
+      </Router>
+      
+    );
+  }
 };
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
