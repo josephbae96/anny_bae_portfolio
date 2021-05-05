@@ -27,15 +27,15 @@ class App extends React.Component {
         title: 'Anny Bae',
         subTitle:
           'Doctoral Candidate for the Texas A&M University - Corpus Christi Psychology Program',
-        text: 'Lover of Priviledge',
+        text: 'Lover of Privaledgers',
       },
       about: {
         title: 'About',
       },
-      Articles: {
+      articles: {
         title: 'Articles',
       },
-      Contact: {
+      contact: {
         title: 'Contact',
       },
     };
@@ -80,17 +80,17 @@ class App extends React.Component {
           <Route
             path='/about'
             exact
-            render={() => <AboutPage title={this.state.home.title} />}
+            render={() => <AboutPage title={this.state.about.title} />}
           />
           <Route
             path='/articles'
             exact
-            render={() => <ArticlesPage title={this.state.home.title} />}
+            render={() => <ArticlesPage title={this.state.articles.title} />}
           />
           <Route
             path='/contact'
             exact
-            render={() => <ContactPage title={this.state.home.title} />}
+            render={() => <ContactPage title={this.state.contact.title} />}
           />
           <Footer />
         </Container>

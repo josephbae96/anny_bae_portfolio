@@ -1,7 +1,7 @@
 # Anny Bae Portfolio
 
 Portfolio website for Anny Bae
-Created by Joseph Bae by Bae Consulting
+Created by Joseph Bae by Bae Corp.
 
 ## Description
 
@@ -14,6 +14,8 @@ As this portfolio website continues to develop, certain aspects of the website,
 such as functionality and features, may continue to be developed or improved.
 This changelog will be the developer's best attempt to record all changes.
 
+2021/05/04: Home page completed functionally, About page finished, Contact and Articles initial work.
+2021/04/28: Routes completed
 2021/04/25: Initial commit, some organization structures and installing dependencies.
 
 ## Features
